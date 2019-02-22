@@ -1,0 +1,13 @@
+3 # length of embedding
+5 # number of entries
+2 # number of categories
+0.12, 0.3, 0.4 # embedding0
+0 # category index0
+0.12, 0.3, 0.9 # embedding1
+1 # category index1
+0.12, 0.9, 0.4 # embedding2
+0 # category index2
+0.19, 0.3, 0.4 # embedding3
+0 # category index3
+0.12, 0.36, 0.24 # embedding4
+1 # category index4
