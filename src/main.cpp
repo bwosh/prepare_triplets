@@ -2,15 +2,19 @@
 #include <pthread.h>
 #include "thread_data.hpp"
 #include "triplets.hpp"
+#include "files.hpp"
 
 int main()
 {
     int threads_number = 8;
+    int max_hap_han_items = 10;
+
+    // prepare data
+    std::tuple<std::list<float*> ,std::list<int>> input = read_input("input.txt");
 
     // create threads
     pthread_t *threads = new pthread_t[threads_number];
     ThreadData **thread_data = (ThreadData**) new void*[threads_number];
-    //int thread_num = 0;
     for (int i=0;i<threads_number;i++)
     {
         thread_data[i] = new ThreadData(i);
